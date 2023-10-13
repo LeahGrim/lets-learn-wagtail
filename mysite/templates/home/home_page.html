@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% block content %}
+    {% image self.banner_image fill-1000x200 as img %}
+    <div class="jumbotron" style="background-image: url('{{ img.url }}'); background-size: cover;">
+        <h1 class="display-4" style="background-color: aliceblue;"> {{self.banner_title}}</h1>
+        <p class="lead"> {{ self.banner_subtitle|richtext }}.</p>
+        {% if self.banner_cta %}
+        <a class="btn btn-primary btn-lg" href="#" role="button">@todo</a>
+        {% endif %}
+      </div>
+{% endblock %}
