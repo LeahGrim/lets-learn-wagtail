@@ -30,6 +30,11 @@ class CardBlock(blocks.StructBlock):
               ]
          )
     )
+    class Meta: 
+        template = "streams/card_block.html"
+        icon = "placeholder"
+        label= "Owl Cards"
+
 
 class RichtextBlock(blocks.RichTextBlock):
     """ rich text with all the features. """
