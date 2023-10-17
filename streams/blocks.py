@@ -1,4 +1,3 @@
-
 """Streamfield live in here."""
 
 from wagtail.core import blocks
