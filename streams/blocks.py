@@ -29,7 +29,7 @@ class CardBlock(blocks.StructBlock):
               ]
          )
     )
-    class Meta: 
+    class Meta: #noqa
         template = "streams/card_block.html"
         icon = "placeholder"
         label= "Owl Cards"
@@ -37,7 +37,6 @@ class CardBlock(blocks.StructBlock):
 
 class RichtextBlock(blocks.RichTextBlock):
     """ rich text with all the features. """
-    
     class Meta: 
             template = "streams/richtext_block.html"
             icon = "doc-full"
@@ -45,7 +44,7 @@ class RichtextBlock(blocks.RichTextBlock):
 
 class SimpleRichtextBlock(blocks.RichTextBlock):
     """ rich text without (limited) all the features. """
-    def __init__(self, required=True, help_text=None, editor='default', features=None, validators=(), **kwargs):
+    def __init__(self, required=True, help_text=None, editor='default', features=None, validators=(), **kwargs): #noqa
         super().__init__(**kwargs)
         self.features = [
             "bold", 

@@ -40,3 +40,4 @@ class HomePage(Page):
 
         verbose_name = "Home Page"
         verbose_name_plural = "Home Pages"
+
