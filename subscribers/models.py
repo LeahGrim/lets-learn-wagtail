@@ -9,3 +9,7 @@ class Subscribers(models.Model):
     def __str__(self):
         """string representation of Subscribers object"""
         return self.full_name
+    
+    class Meta: #noqa
+        verbose_name = "Subscriber"
+        verbose_name_plural = "Subscribers"
