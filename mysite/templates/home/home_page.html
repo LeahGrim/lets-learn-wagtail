@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags wagtailimages_tags %}
 {% block content %}
+   <!-- Banner On top of Home Page -->
     {% image self.banner_image width-1500 as img %}
     <div class="jumbotron" style="background-image: url('{{ img.url }}'); background-size: cover; background-position: center center;">
         <h1 class="display-4"> {{self.banner_title}}</h1>
@@ -9,8 +10,11 @@
         <a class="btn btn-primary btn-lg" href="#" role="button">@todo</a>
         {% endif %}
       </div>
+
+
+
+      <!-- StreamFields Located Here  -->
       {% for block in page.content %}
       {% include_block block %}
-  
       {% endfor %}
 {% endblock %}
