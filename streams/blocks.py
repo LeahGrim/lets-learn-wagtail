@@ -18,6 +18,7 @@ class TitleAndTextBlock(blocks.StructBlock):
 class CardBlock(blocks.StructBlock):
     """ cards with image and text and button."""
     title = blocks.CharBlock(required=True, help_text='Add your Title')
+    
     cards = blocks.ListBlock(
          blocks.StructBlock(
               [
