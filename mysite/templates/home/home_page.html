@@ -16,11 +16,11 @@
         <div class="carousel-inner">
           {% for loop_cycle in self.carousel_images.all %}
           {% image loop_cycle.carousel_image fill-900x400 as img %}
-          <div class="carousel-item active">
+          <div class="carousel-ite{% if forloop.counter == 1 %} active {% endif %}">
             <img src="{{ img.url }}" class="d-block w-100" alt="{{ img.alt }}">
           </div>
           {% endfor %}
-        </div>
+        </div> 
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only"></span>
