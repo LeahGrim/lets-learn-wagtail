@@ -6,9 +6,9 @@ from wagtail.contrib.settings.models import BaseSetting, register_setting
 class SocialMediaSettings(BaseSetting):
     """Social Media settings for our custom website """
     
-    facebook = models.URLfield(blank=True, null=True, help_text="Facebook URL")
-    twitter = models.Charfield(blank=True, null=True, help_text="Twitter URL ")
-    youtube = models.Charfield(blank=True, null=True, help_text="Youtube Channel")
+    facebook = models.URLField(blank=True, null=True, help_text="Facebook URL")
+    twitter = models.CharField(blank=True, null=True, max_length=500, help_text="Twitter URL ")
+    youtube = models.CharField(blank=True, null=True, max_length=500, help_text="Youtube Channel")
     
     panels = [
         MultiFieldPanel([
