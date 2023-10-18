@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+
 {% load wagtailcore_tags wagtailimages_tags %}
 {% block content %}
     <hr/>
@@ -17,9 +17,7 @@
     <hr/>
             {% for block in page.content %}
             {% include_block block %}
-        
             {% endfor %}
           </div>
         </div>
       </div>
-{% endblock %}
