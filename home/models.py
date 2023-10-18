@@ -61,12 +61,11 @@ class HomePage(Page):
             ImageChooserPanel("banner_image"),
             PageChooserPanel("banner_cta"),
         ], heading="Banner Options"),   
-    
-        StreamFieldPanel("content"),
-
         MultiFieldPanel([
             InlinePanel("carousel_images"),
-        ], heading="Carousel Images")
+        ], heading="Carousel Images"),
+        StreamFieldPanel("content"),
+
     ]
 
     class Meta:
