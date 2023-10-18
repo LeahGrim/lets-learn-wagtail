@@ -62,7 +62,7 @@ class HomePage(Page):
             PageChooserPanel("banner_cta"),
         ], heading="Banner Options"),   
         MultiFieldPanel([
-            InlinePanel("carousel_images"),
+            InlinePanel("carousel_images", max_num=5, min_num=1, label="Add Image" ),
         ], heading="Carousel Images"),
         StreamFieldPanel("content"),
 
