@@ -14,6 +14,17 @@ class TitleAndTextBlock(blocks.StructBlock):
         template = "streams/title_and_text_block.html"
         icon = "edit"
         label = "Staff Name, Info, Email"   
+#author contribution info on blog listing / detail pages         
+class AuthorInfoBlock(blocks.StructBlock):
+    """Author Info Field Live Here"""
+    
+    name = blocks.CharBlock(required=True, help_text='Add your Name')
+    info = blocks.TextBlock(required=True, help_text='add info about you here')
+    email = blocks.EmailBlock(required=True, help_text ='add your email here for account validation')
+    class Meta: 
+        template = "streams/author_info_block.html"
+        icon = "edit"
+        label = "Author Info" 
 
 class CardBlock(blocks.StructBlock):
     """ cards with image and text and button."""
