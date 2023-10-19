@@ -9,7 +9,7 @@ class TitleAndTextBlock(blocks.StructBlock):
     
     title = blocks.CharBlock(required=True, help_text='Add your Title')
     text = blocks.TextBlock(required=True, help_text='add additional text here')
-
+    email = blocks.EmailBlock(required=True, help_text ='add your email here for account validation')
     class Meta: 
         template = "streams/title_and_text_block.html"
         icon = "edit"
