@@ -46,7 +46,7 @@ class BlogDetailPage(Page):
     content = StreamField(
         [
             # ("name doesn't matter here", blocks.NAMEOFCLASSinBLOCKS.PY)
-            ("title_and_text", blocks.TitleAndTextBlock()), 
+            ("author_info", blocks.AuthorInfoBlock()), 
             ("full_richtext", blocks.RichtextBlock()),
             ("simple_richtext", blocks.SimpleRichtextBlock()),
             ("cards", blocks.CardBlock()),
