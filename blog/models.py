@@ -24,6 +24,9 @@ class BlogListingPage(Page):
         """adding custom stuff to our context."""
         context = super().get_context(request,*args, **kwargs)
         #context['extra'] = 'extra things to display as string in admin page" 
+        #Add blog detail pages to the context in order to enable looping through objects
+        context['posts'] = BlogDetailPage.objects.live().public()
+        
         return context
     
 class BlogDetailPage(Page):
