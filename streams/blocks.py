@@ -7,8 +7,8 @@ from wagtail.images.blocks import ImageChooserBlock
 class TitleAndTextBlock(blocks.StructBlock):
     """Title and text and nothing else"""
     
-    title = blocks.CharBlock(required=True, help_text='Add your Title')
-    text = blocks.TextBlock(required=True, help_text='add additional text here')
+    name = blocks.CharBlock(required=True, help_text='Add your Name')
+    info = blocks.TextBlock(required=True, help_text='add info about you here')
     email = blocks.EmailBlock(required=True, help_text ='add your email here for account validation')
     class Meta: 
         template = "streams/title_and_text_block.html"
