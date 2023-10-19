@@ -19,6 +19,7 @@ class FlexPage(Page):
             ("cta", blocks.CTABlock()),
 
         ],
+        #this indicates that all these streamfields are optional
         null=True, 
         blank=True,
     ) 
