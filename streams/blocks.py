@@ -1,5 +1,5 @@
 """Streamfield live in here."""
-
+# we are importing blocks.py from wagtail 
 from wagtail.core import blocks
 from wagtail.images.blocks import ImageChooserBlock
 

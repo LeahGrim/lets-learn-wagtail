@@ -9,7 +9,6 @@ class FlexPage(Page):
 
     template = "flex/flex_page.html"
 
-
     content = StreamField(
         [
             ("title_and_text", blocks.TitleAndTextBlock()), 
