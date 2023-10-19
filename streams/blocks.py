@@ -21,6 +21,7 @@ class AuthorInfoBlock(blocks.StructBlock):
     name = blocks.CharBlock(required=True, help_text='Add your Name')
     info = blocks.TextBlock(required=True, help_text='add info about you here')
     email = blocks.EmailBlock(required=True, help_text ='add your email here for account validation')
+    author_image = ImageChooserBlock(required=False, help_text="add your photo (optional)")
     class Meta: 
         template = "streams/author_info_block.html"
         icon = "edit"
