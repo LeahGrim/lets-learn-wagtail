@@ -9,7 +9,7 @@ class SubscriberAdmin(ModelAdmin):
     menu_order = 25
     add_to_settings_menu = False
     exclude_from_explorer = False
-    list_display = ("email", "full_name")
-    search_fields = ("email", "full_name")
+    list_display = ("email", "full_name", "title")
+    search_fields = ("email", "full_name", "title")
 
 modeladmin_register(SubscriberAdmin)
