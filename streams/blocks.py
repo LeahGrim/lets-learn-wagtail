@@ -13,7 +13,7 @@ class TitleAndTextBlock(blocks.StructBlock):
     class Meta: 
         template = "streams/title_and_text_block.html"
         icon = "edit"
-        label = "Title and Text"   
+        label = "Staff Name, Info, Email"   
 
 class CardBlock(blocks.StructBlock):
     """ cards with image and text and button."""
