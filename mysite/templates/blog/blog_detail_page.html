@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+
+{% load wagtailimages_tags %}
+
+<!-- We are using self here instead of looping through post bc we are using the BlogDetailPage class within blocks/models.py 
+          -->
+{% image self.blog_image fill-900x400 as banner %}
