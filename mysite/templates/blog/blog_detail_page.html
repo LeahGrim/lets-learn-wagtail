@@ -10,5 +10,10 @@
 {% image self.blog_image fill-900x800 as banner %}
     <img src="{{ banner.url }}" alt="{{ banner.alt }}" style='width:100%; height:auto;'> 
 
+    <div class="container"> 
+        <div class="text-center"> 
+            {{self.custom_title}}
+        </div>
+    </div>
 {% endblock %}
 
