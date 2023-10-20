@@ -3,6 +3,12 @@
 
 {% load wagtailimages_tags %}
 
-<!-- We are using self here instead of looping through post bc we are using the BlogDetailPage class within blocks/models.py 
-          -->
-{% image self.blog_image fill-900x400 as banner %}
+
+
+{% block content %}
+<!-- We are using self here instead of looping through post bc we are using the BlogDetailPage class within blocks/models.py -->
+{% image self.blog_image fill-900x800 as banner %}
+    <img src="{{ banner.url }}" alt="{{ banner.alt }}" style='width:100%; height:auto;'> 
+
+{% endblock %}
+
