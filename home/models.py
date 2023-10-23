@@ -1,12 +1,9 @@
 from django.db import models
-
-
 from modelcluster.fields import ParentalKey
 from wagtail.core.models import Page, Orderable
 from wagtail.core.fields import RichTextField, StreamField 
 from wagtail.admin.edit_handlers import FieldPanel, PageChooserPanel, StreamFieldPanel, InlinePanel, MultiFieldPanel
 from wagtail.images.edit_handlers import ImageChooserPanel
-from wagtail.contrib.routable_page.models import RoutablePageMixin, route
 from streams import blocks
 
 class HomepageCarouselImages(Orderable):
