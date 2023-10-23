@@ -86,3 +86,6 @@ class CTABlock(blocks.StructBlock):
           icon = "placeholder"
           label = "Call To Action"
 
+class ButtonBlock(blocks.StructBlock):
+     """An external or internal URL."""\
+     
