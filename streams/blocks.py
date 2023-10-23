@@ -109,3 +109,4 @@ class ButtonBlock(blocks.StructBlock):
           template = "streams/button_block.html"
           icon = "placeholder"
           label = "Single Button"
+          value_class = LinkStructValue
