@@ -20,7 +20,7 @@ class HomepageCarouselImages(Orderable):
         ImageChooserPanel("carousel_image")
     ]
 
-class HomePage(RoutablePageMixin, Page):
+class HomePage(Page):
     """Home page model."""
 
     templates = "home/home_page.html"
