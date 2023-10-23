@@ -105,6 +105,11 @@ class ButtonBlock(blocks.StructBlock):
      button_page = blocks.PageChooserBlock(required=False, help_text='If selected, this url will be used first')
      button_url = blocks.URLBlock(required=False, help_text='If added, this url will be used second to button page')
     
+     def get_context(self, request, *args, **kwargs):
+          context = super().get_context(request, *args, **kwargs)
+          context['latest_posts'] = BlogDetailPage.objects.live().public()[:3]
+          return context
+     
      class Meta: #noqa
           template = "streams/button_block.html"
           icon = "placeholder"
