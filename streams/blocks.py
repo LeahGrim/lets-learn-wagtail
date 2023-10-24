@@ -13,7 +13,9 @@ class TitleAndTextBlock(blocks.StructBlock):
     class Meta: 
         template = "streams/title_and_text_block.html"
         icon = "edit"
-        label = "Staff Name, Info, Email"   
+        label = "Staff Name, Info, Email"  
+        
+         
 #author contribution info on blog listing / detail pages         
 class AuthorInfoBlock(blocks.StructBlock):
     """Author Info Field Live Here"""

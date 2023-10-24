@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'home',
     'search',
     'flex',
+    'resources',
     'streams', 
     'site_settings',
     'subscribers',
