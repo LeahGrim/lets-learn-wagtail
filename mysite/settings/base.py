@@ -40,8 +40,6 @@ INSTALLED_APPS = [
     'wagtail.contrib.routable_page',
     'wagtail.contrib.sitemaps',
     'wagtail.contrib.modeladmin',
-    'wagtail.contrib.settings',  # Only required when WAGTAILTRANS_LANGUAGES_PER_SITE=True
-    'wagtailtrans',
     'wagtail.embeds',
     'wagtail.sites',
     'wagtail.users',
